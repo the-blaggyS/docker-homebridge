@@ -23,7 +23,7 @@ jobs:
             os: ubuntu-latest
             TARGET_IMAGE: theblaggy/homebridge
             S6_ARCH: amd64
-            DOCKERFILE: Dockerfile.ubuntu
+            DOCKERFILE: Dockerfile
             AVAHI: "0"
             TAG_SUFFIX: ubuntu-no-avahi-amd64
             ALT_SUFFIX: debian-no-avahi-amd64
