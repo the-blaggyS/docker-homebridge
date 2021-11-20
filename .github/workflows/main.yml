@@ -251,4 +251,3 @@ jobs:
         docker manifest annotate $TARGET_IMAGE:$MANIFEST_SUFFIX $TARGET_IMAGE:${TAG_PREFIX}-arm32v7 --os=linux --arch=arm --variant=v7
         docker manifest annotate $TARGET_IMAGE:$MANIFEST_SUFFIX $TARGET_IMAGE:${TAG_PREFIX}-arm64v8 --os=linux --arch=arm64 --variant=v8
         docker manifest push $TARGET_IMAGE:$MANIFEST_SUFFIX
-                                                                                                                                                   17:14:49
