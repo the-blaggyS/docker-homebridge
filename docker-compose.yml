@@ -1,0 +1,16 @@
+version: '2'
+services:
+  homebridge:
+    image: theblaggy/homebridge:ubuntu
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8581
+      - TZ=Germany/Berlin
+    volumes:
+      - ./volumes/homebridge:/homebridge
+    devices:
+      - /dev/gpiomem:/dev/gpiomem
