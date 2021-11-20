@@ -13,7 +13,7 @@ jobs:
           # amd64 builds (ubuntu)
           - name: ubuntu-amd64
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: amd64
             DOCKERFILE: Dockerfile
             AVAHI: "1"
@@ -21,7 +21,7 @@ jobs:
             ALT_SUFFIX: debian-amd64
           - name: ubuntu-no-avahi-amd64
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: amd64
             DOCKERFILE: Dockerfile
             AVAHI: "0"
@@ -31,7 +31,7 @@ jobs:
           # arm32v7 builds (ubuntu)
           - name: ubuntu-arm32v7
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: armhf
             DOCKERFILE: Dockerfile
             AVAHI: "1"
@@ -39,7 +39,7 @@ jobs:
             ALT_SUFFIX: debian-arm32v7,debian-raspberry-pi
           - name: ubuntu-no-avahi-arm32v7
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: armhf
             DOCKERFILE: Dockerfile
             AVAHI: "0"
@@ -49,7 +49,7 @@ jobs:
           # arm64v8 builds (ubuntu)
           - name: ubuntu-arm64v8
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: aarch64
             DOCKERFILE: Dockerfile
             AVAHI: "1"
@@ -57,7 +57,7 @@ jobs:
             ALT_SUFFIX: debian-arm64v8
           - name: ubuntu-no-avahi-arm64v8
             os: ubuntu-latest
-            TARGET_IMAGE: the-blaggyS/homebridge
+            TARGET_IMAGE: the-blaggys/homebridge
             S6_ARCH: aarch64
             DOCKERFILE: Dockerfile
             AVAHI: "0"
