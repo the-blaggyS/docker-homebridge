@@ -97,6 +97,8 @@ jobs:
     steps:
     # checkout repo
     - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
 
     # setup multi-arch build support
     - name: Install Dependencies
