@@ -1,0 +1,3 @@
+[submodule "root/opt/WiringPi"]
+	path = root/opt/WiringPi
+	url = https://github.com/the-blaggyS/WiringPi
