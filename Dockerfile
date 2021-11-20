@@ -32,5 +32,8 @@ VOLUME /homebridge
 
 COPY root /
 
+RUN echo 'abc     ALL=(ALL:ALL) NOPASSWD: /homebridge/node_modules/homebridge-rfoutlets/codesend' >> /etc/sudoers
+RUN cd /opt/WiringPi && ./build
+
 ARG AVAHI
 ENV ENABLE_AVAHI="${AVAHI:-0}"
