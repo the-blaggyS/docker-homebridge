@@ -35,6 +35,8 @@ VOLUME /homebridge
 COPY root /
 
 RUN echo 'abc     ALL=(ALL:ALL) NOPASSWD: /homebridge/node_modules/homebridge-rfoutlets/codesend' >> /etc/sudoers
+RUN ls -la /
+RUN ls -la /opt/WiringPi/
 RUN /opt/WiringPi/build
 
 ARG AVAHI
