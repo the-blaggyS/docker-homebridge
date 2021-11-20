@@ -9,7 +9,7 @@ services:
       - PUID=1000
       - HOMEBRIDGE_CONFIG_UI=1
       - HOMEBRIDGE_CONFIG_UI_PORT=8581
-      - TZ=Germany/Berlin
+      - TZ=Europe/Berlin
     volumes:
       - ./volumes/homebridge:/homebridge
     devices:
